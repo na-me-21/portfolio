@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MESSMER Nathan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ÉCRAN INTRODUCTIF NOIR -->
+    <div id="intro-overlay">
+        <h1 class="intro-title">Portfolio MESSMER Nathan</h1>
+    </div>
+
+    <!-- 2. CONTENU PRINCIPAL DU SITE -->
+    <div id="main-content">
+        <!-- En-tête / Profil -->
+        <header class="portfolio-header">
+            <div class="header-profile">
+                <!-- Vous pourrez remplacer la div par <img src="votre-photo.jpg" alt="Nathan Messmer" class="profile-img"> -->
+                <div class="avatar-placeholder">NM</div>
+                <div class="header-info">
+                    <h1>Nathan MESSMER</h1>
+                    <h2>Étudiant Alternant en Ingénierie Mécanique</h2>
+                    <p class="school-tag">SIGMA Clermont-Ferrand | Spécialité : Machines, Robots et Systèmes</p>
+                    <div class="contact-quick">
+                        <span>📍 Bourg-Lastic (63760)</span>
+                        <span>📞 07.71.66.42.90</span>
+                        <span>✉️ nathan.messmer21@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation par Onglets -->
+        <nav class="portfolio-nav">
+            <button class="nav-tab active" onclick="openTab(event, 'presentation')">Présentation</button>
+            <button class="nav-tab" onclick="openTab(event, 'parcours')">Parcours & Expériences</button>
+            <button class="nav-tab" onclick="openTab(event, 'projets')">Projets & Preuves</button>
+            <button class="nav-tab" onclick="openTab(event, 'competences')">Compétences & Outils</button>
+            <button class="nav-tab" onclick="openTab(event, 'contact')">Contact & CV</button>
+        </nav>
+
+        <!-- Contenu des Onglets -->
+        <main class="portfolio-container">
+            
+            <!-- Onglet 1 : Présentation & Infos -->
+            <section id="presentation" class="tab-content active">
+                <h3>À propos de moi</h3>
+                <p>Actuellement étudiant ingénieur en alternance dans la R&D à la <strong>Société laitière de Laqueuille</strong>, j'ai pour objectif de valider mon diplôme afin de concrétiser mon projet professionnel.</p>
+                <br>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h4>Informations</h4>
+                        <ul>
+                            <li><strong>Âge :</strong> 23 ans</li>
+                            <li><strong>Permis :</strong> Permis B / Véhiculé</li>
+                            <li><strong>Statut :</strong> Élève ingénieur alternant (2024-2027)</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h4>Soft-Skills</h4>
+                        <div class="tags-container">
+                            <span class="tag">Adaptabilité</span>
+                            <span class="tag">Autonomie</span>
+                            <span class="tag">Créativité</span>
+                            <span class="tag">Fiabilité</span>
+                            <span class="tag">Pédagogie</span>
+                            <span class="tag">Rigueur</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Onglet 2 : Parcours Professionnel & Formation -->
+            <section id="parcours" class="tab-content">
+                <h3>Expériences Professionnelles & Formation</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">Oct 2026 - Sept 2027</span>
+                        <h4>Alternant R&D Mécanique</h4>
+                        <p class="company">Société laitière de Laqueuille (Saint-Julien-Puy-Lavèze)</p>
+                        <p>Optimisation de ligne de production fromagère : standardisation, conceptualisation et automatisation.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date">Mai - Sept 2026</span>
+                        <h4>Stagiaire - Projet Éthiopie 4.0</h4>
+                        <p class="company">Addis Ababa University, Éthiopie</p>
+                        <p>Création de TP et mini-projets sur des cobots UR pour les étudiants (écriture, résolution de Rubik's Cube) et conceptualisation d'un Workshop.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date">Sept 2025 - Mai 2026</span>
+                        <h4>Employé polyvalent</h4>
+                        <p class="company">McDonald's, Clermont-Ferrand</p>
+                        <p>Préparation des commandes, service et accueil des clients, gestion d'équipe.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date">Juillet - Août 2025</span>
+                        <h4>Opérateur machine (Intérim)</h4>
+                        <p class="company">Groupe Schaeffler, Haguenau</p>
+                        <p>Opérateur sur machine à commande numérique dans l'industrie automobile.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="date">Juillet 2021 - Juillet 2023</span>
+                        <h4>Réserviste de l'Armée de l'Air et de l'Espace</h4>
+                        <p class="company">Base de Nancy-Ochey</p>
+                        <p>Assistant de secrétariat, mécanicien piste et mécanicien équipement de vol.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 40px;">Formations & Diplômes</h3>
+                <ul class="formation-list">
+                    <li><strong>2024 - 2027 :</strong> Diplôme d'ingénieur mécanique à SIGMA Clermont (Spécialité : Machines, Robots et Systèmes | Orientation : Procédés de fabrication et Industrialisation).</li>
+                    <li><strong>2021 - 2024 :</strong> Classe préparatoire PCSI/PSI*, Strasbourg.</li>
+                    <li><strong>2021 :</strong> Baccalauréat scientifique (Spécialités : Mathématiques, Physique-Chimie, NSI | Options : Maths expertes, grec ancien).</li>
+                </ul>
+            </section>
+
+            <!-- Onglet 3 : Projets & Preuves -->
+            <section id="projets" class="tab-content">
+                <h3>Projets & Réalisations (Traces)</h3>
+                
+                <div class="project-card">
+                    <h4>Formula Student (Sigma Racing) | 2025-2026</h4>
+                    <p><strong>Contexte & Tâche :</strong> Collaboration inter-pôles (électrique, simulation, mécanique) pour la conception et la construction d'une monoplace de compétition.</p>
+                    <p><strong>Action & Résultat :</strong> Participation active et représentation de l'école lors de la compétition internationale en Espagne.</p>
+                    <div class="trace-box">📌 <strong>Trace :</strong> Dossiers de conception technique, plans CAO et photos de la monoplace.</div>
+                </div>
+
+                <div class="project-card">
+                    <h4>Projets TIPE (2021-2024)</h4>
+                    <p>• <strong>Aide à l'arbitrage humain au tennis par outil numérique :</strong> Analyse de trajectoires et détection d'impacts.</p>
+                    <p>• <strong>Gestion du trafic routier à un carrefour par IA :</strong> Optimisation des flux de circulation par modélisation algorithmique.</p>
+                </div>
+            </section>
+
+            <!-- Onglet 4 : Compétences & Outils -->
+            <section id="competences" class="tab-content">
+                <h3>Compétences Techniques & Outils</h3>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Logiciels & Ingénierie</h4>
+                        <p>Catia, SolidWorks, Access, Ansys, Adams, KissSoft, RoboDK, Interface UR.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Programmation & Bureautique</h4>
+                        <p>Python, Matlab (Maîtrise intermédiaire-supérieur) | HTML / CSS (Intermédiaire) | Word, Excel, PowerPoint (Avancé).</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Langues</h4>
+                        <p><strong>Anglais :</strong> B2 - Intermédiaire supérieur<br><strong>Allemand :</strong> B1 - Intermédiaire</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Onglet 5 : Contact & CV -->
+            <section id="contact" class="tab-content">
+                <h3>Contact & Liens Professionnels</h3>
+                <p><strong>Téléphone :</strong> 07.71.66.42.90</p>
+                <p><strong>Email :</strong> nathan.messmer21@gmail.com</p>
+                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/nathan-messmer" target="_blank">Nathan MESSMER</a></p>
+                <p><strong>Localisation :</strong> Bourg-Lastic (63760) / Clermont-Ferrand</p>
+                <br>
+                <a href="CV MESSMER Nathan.pdf" target="_blank" class="cv-button">Télécharger mon CV (PDF)</a>
+            </section>
+        </main>
+    </div>
+
+    <!-- LOGIQUE JAVASCRIPT -->
+    <script>
+        // 1. Gestion du fond noir d'ouverture (2.5 secondes)
+        window.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('intro-overlay');
+            const mainContent = document.getElementById('main-content');
+
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+                mainContent.classList.add('visible');
+
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 1000);
+            }, 2500);
+        });
+
+        // 2. Gestion du changement d'onglets
+        function openTab(event, tabId) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            const navTabs = document.querySelectorAll('.nav-tab');
+            navTabs.forEach(tab => tab.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

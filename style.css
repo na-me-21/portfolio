@@ -74,6 +74,22 @@ body {
     gap: 25px;
 }
 
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #428bd9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px; 
+}
+
 .avatar-placeholder {
     width: 100px;
     height: 100px;
@@ -113,6 +129,26 @@ body {
     font-size: 0.85rem;
     color: #666;
     flex-wrap: wrap;
+}
+
+.skill-level {
+    font-size: 0.85em;
+    font-style: italic;
+    display: block; /* Force le passage à la ligne */
+    margin-bottom: 5px;
+}
+
+.logiciel{
+    font-size: 1em;
+    display: block; /* Force le passage à la ligne */
+    margin-bottom: 5px;
+}
+
+.langue{
+    font-size: 1em;
+    color: #666;
+    display: block; /* Force le passage à la ligne */
+    margin-bottom: 5px;
 }
 
 /* --- BARRE D'ONGLETS --- */
@@ -211,7 +247,7 @@ body {
     font-weight: 600;
 }
 
-/* Timeline (Parcours) */
+/* --- TIMELINE AVEC LOGOS --- */
 .timeline {
     border-left: 3px solid #0056b3;
     padding-left: 20px;
@@ -219,8 +255,16 @@ body {
 }
 
 .timeline-item {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     position: relative;
+    display: flex; /* Aligne le texte à gauche et le logo à droite */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-content {
+    flex: 1; /* Prend tout l'espace disponible à gauche */
 }
 
 .timeline-item .date {
@@ -241,6 +285,18 @@ body {
     color: #666;
     margin-bottom: 6px;
     font-style: italic;
+}
+
+/* Style des logos d'entreprises */
+.company-logo {
+    width: 85px; /* Largeur ajustable selon la taille souhaitée */
+    height: 85px;
+    object-fit: contain; /* Conserve les proportions sans déformer l'image */
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0; /* Empêche le logo de se déformer sur petit écran */
 }
 
 .formation-list {
@@ -330,5 +386,16 @@ body {
 
     .intro-title {
         font-size: 1.6rem;
+    }
+
+    .timeline-item {
+        flex-direction: column-reverse; /* Place le logo au-dessus du texte sur mobile */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .company-logo {
+        width: 50px;
+        height: 50px;
     }
 }

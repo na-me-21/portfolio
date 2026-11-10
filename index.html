@@ -18,12 +18,12 @@
         <!-- En-tête / Profil -->
         <header class="portfolio-header">
             <div class="header-profile">
-                <!-- Vous pourrez remplacer la div par <img src="votre-photo.jpg" alt="Nathan Messmer" class="profile-img"> -->
                 <img src="photo-profil.jpg" alt="Nathan Messmer" class="profile-pic">
                 <div class="header-info">
                     <h1>Nathan MESSMER</h1>
                     <h2>Étudiant Alternant en Ingénierie Mécanique</h2>
                     <p class="school-tag">SIGMA Clermont INP | Clermont-Ferrand | Spécialité : Machines, Robots et Systèmes</p>
+                    <p class="school-tag">Société laitière de Laqueuille</p>
                     <div class="contact-quick">
                         <span><img src="logo_adresse.png" alt="Adresse" class="logo"> Bourg-Lastic (63760)</span>
                         <span><img src="logo_phone.jpg" alt="Phone" class="logo"> 07.71.66.42.90</span>
@@ -37,18 +37,19 @@
         <nav class="portfolio-nav">
             <button class="nav-tab active" onclick="openTab(event, 'presentation')">Présentation</button>
             <button class="nav-tab" onclick="openTab(event, 'parcours')">Parcours & Expériences</button>
-            <button class="nav-tab" onclick="openTab(event, 'projets')">Projets & Preuves</button>
+            <button class="nav-tab" onclick="openTab(event, 'projets')">Projets</button>
             <button class="nav-tab" onclick="openTab(event, 'competences')">Compétences & Outils</button>
             <button class="nav-tab" onclick="openTab(event, 'contact')">Contact & CV</button>
         </nav>
-
+    </div>
+    <div class="wide-container">
         <!-- Contenu des Onglets -->
         <main class="portfolio-container">
             
             <!-- Onglet 1 : Présentation & Infos -->
             <section id="presentation" class="tab-content active">
                 <h3>À propos de moi</h3>
-                <p>Actuellement étudiant ingénieur en alternance dans la R&D à la <strong>Société laitière de Laqueuille</strong> et à l'école <strong>Sigma Clermont INP</strong>, j'ai pour objectif de valider mon diplôme afin de concrétiser mon projet professionnel.</p>
+                <p>Actuellement étudiant ingénieur en alternance dans la R&D à la <strong>Société laitière de Laqueuille</strong> et à l'école <strong>Sigma Clermont INP</strong>, j'ai pour objectif de valider mon diplôme ainsi que de réussir le concours d'agrégation dans le génie mécanique afin de devenir professeur dans l'enseignement supérieur dans le domaine de la mécanique et des sciences de l'ingénieur.</p>
                 <br>
                 <div class="info-grid">
                     <div class="info-box">
@@ -70,7 +71,7 @@
 
             <!-- Onglet 2 : Parcours Professionnel & Formation -->
             <section id="parcours" class="tab-content">
-                <h3>Expériences Professionnelles & Formation</h3>
+                <h3>Expériences Professionnelles</h3>
                 
                 <div class="timeline">
                     <!-- Expérience 1 -->
@@ -80,6 +81,7 @@
                             <h4>Ingénieur R&D Mécanique - Alternant</h4>
                             <p class="company">Société laitière de Laqueuille (Saint-Julien-Puy-Lavèze)</p>
                             <p>Optimisation de ligne de production fromagère : standardisation, conceptualisation et automatisation.</p>
+                            <p>Modélisation 3D et 2D de moule à fromage (Bleu d'Auvergne, Fourme d'Ambert, Bleu de Laqueuille, Gaperon, ...)</p>
                         </div>
                         <img src="Logo-La-Meme.jpg" alt="Logo Société laitière de Laqueuille" class="company-logo">
                     </div>
@@ -90,7 +92,8 @@
                             <span class="date">Mai - Sept 2026</span>
                             <h4>Assistant Ingénieur - Projet Éthiopie 4.0 - Stage</h4>
                             <p class="company">Addis Ababa University, Éthiopie</p>
-                            <p>Création de TP et mini-projets sur des cobots UR pour les étudiants (écriture, résolution de Rubik's Cube) et conceptualisation d'un Workshop.</p>
+                            <p>Création de TP et mini-projets sur des cobots UR pour les étudiants (écriture, résolution de Rubik's Cube)</p>
+                            <p>Conceptualisation d'un Workshop.</p>
                         </div>
                         <img src="CTBE_AAU.jpg" alt="Logo Addis Ababa University" class="company-logo">
                     </div>
@@ -112,7 +115,7 @@
                             <span class="date">Juillet - Août 2025</span>
                             <h4>Opérateur machine (Stage / Intérim)</h4>
                             <p class="company">Groupe Schaeffler, Haguenau</p>
-                            <p>Opérateur sur machine à commande numérique dans l'industrie automobile.</p>
+                            <p>Opérateur sur machine à commande numérique dans l'industrie du roulement à billes.</p>
                         </div>
                         <img src="Schaeffler-Logo.jpg" alt="Logo Schaeffler" class="company-logo">
                     </div>
@@ -123,7 +126,9 @@
                             <span class="date">Juillet 2021 - Juillet 2023</span>
                             <h4>Réserviste de l'Armée de l'Air et de l'Espace</h4>
                             <p class="company">Base de Nancy-Ochey</p>
-                            <p>Assistant de secrétariat, mécanicien piste et mécanicien équipement de vol.</p>
+                            <p>Assistant de secrétariat </p>
+                            <p>Mécanicien piste </p>
+                            <p>Équipementier</p>
                         </div>
                         <img src="AAE.png" alt="Logo Armée de l'Air et de l'Espace" class="company-logo">
                     </div>
@@ -139,19 +144,63 @@
 
             <!-- Onglet 3 : Projets & Preuves -->
             <section id="projets" class="tab-content">
-                <h3>Projets & Réalisations (Traces)</h3>
+                <h3>Projets</h3>
                 
+                <div class="project-card">
+                    <h4>Éthiopie 4.0 | 2026</h4>
+                    <p><strong>Contexte & Tâche :</strong> Transfert de connaissance de la France vers l'Éthiopie.</p>
+                    <p><strong>Action & Résultat :</strong> Création d'un Workshop et de Travaux Pratiques pour la commande de cobots <em>Universal Robot</em></p>
+                    <div class="trace-box">
+                        <p style="align-self: flex-start;">📌 <strong>Photos :</strong></p>
+                        
+                        <div class="trace-images">
+                            <div class="photo-item"></div>
+                                <img src="photo_fin.jpg" alt="Photos fin stage" class="photo">
+                                <p class="photo-caption">Fin de stage au College of Technology and Built Environment</p>
+                            </div>
+                            <div class="photo-item">
+                                <img src="cours_info.jpg" alt="Photo cours d'info aux étudiants" class="photo">
+                                <p class="photo-caption">Initiation aux langages HTML et CSS pour les étudiants éthiopiens.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <p style="align-self: flex-start;">📌 <strong>Projets réalisés :</strong></p>
+                        <div class="trace-images">
+                            <img src="plan_3D.jpeg" alt="Photo plan 33D Workshop" class="photo">
+                            <video controls width="100%" class="portfolio-video">
+                                <source src="VIDEO_cube.mp4" type="video/mp4">
+                                Votre navigateur ne prend pas en charge la lecture de vidéos.
+                            </video>
+                        </div>
+                        
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <h4>Formula Student (Sigma Racing) | 2025-2026</h4>
                     <p><strong>Contexte & Tâche :</strong> Collaboration inter-pôles (électrique, simulation, mécanique) pour la conception et la construction d'une monoplace de compétition.</p>
-                    <p><strong>Action & Résultat :</strong> Participation active et représentation de l'école lors de la compétition internationale en Espagne.</p>
-                    <div class="trace-box">📌 <strong>Trace :</strong> Dossiers de conception technique, plans CAO et photos de la monoplace.</div>
+                    <p><strong>Action & Résultat :</strong> Participation active et représentation de l'école lors de compétitions internationales notamment en Espagne et au Portugal.</p>
+                    <div class="trace-box">
+                        <p style="align-self: flex-start;">📌 <strong>Photos :</strong></p>
+                        
+                        <div class="trace-images">
+                            <img src="FSS.jpg" alt="Formula Student Spain" class="photo">
+                            <img src="equipe.jpg" alt="Photo d'équipe" class="photo">
+                            <img src="MC.jpg" alt="Photo Magny-Cours" class="photo">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="project-card">
                     <h4>Projets TIPE (2021-2024)</h4>
-                    <p>• <strong>Aide à l'arbitrage humain au tennis par outil numérique :</strong> Analyse de trajectoires et détection d'impacts.</p>
-                    <p>• <strong>Gestion du trafic routier à un carrefour par IA :</strong> Optimisation des flux de circulation par modélisation algorithmique.</p>
+                    <ul>
+                        <li><strong>Aide à l'arbitrage humain au tennis par outil numérique :</strong> Analyse de trajectoires et détection d'impacts.</li>
+                        <span class="skill-level"><a href="https://github.com/na-me-21/TIPE2" target="_blank">Présentation TIPE 2 </a></span>
+                        <li><strong>Gestion du trafic routier à un carrefour par IA :</strong> Optimisation des flux de circulation par modélisation algorithmique.</li>
+                        <span class="skill-level"><a href="https://github.com/na-me-21/TIPE1" target="_blank">Présentation TIPE 1 </a></span>
+                        
+                    </ul>
+                    
                 </div>
             </section>
 
@@ -169,7 +218,9 @@
                     </div>
                     <div class="skill-card">
                         <h4>Programmation & Bureautique</h4>
-                        <p>Word, Excel, PowerPoint <span class="skill-level">Avancé</span> Python, Matlab <span class="skill-level">Maîtrise intermédiaire-supérieur</span> HTML / CSS <span class="skill-level">Intermédiaire</span></p>
+                        <p>Word / Excel / PowerPoint <span class="skill-level">Avancé</span> </p>
+                        <p>Python / Matlab <span class="skill-level">Maîtrise intermédiaire-supérieur</span> </p>
+                        <p>HTML / CSS <span class="skill-level">Intermédiaire</span></p>
                     </div>
                     <div class="skill-card">
                         <h4>Langues</h4>
@@ -202,7 +253,6 @@
                 <p><strong>Localisation :</strong> Bourg-Lastic (63760) / Clermont-Ferrand</p>
                 <br>
                 <p><strong>CV Numérique :</strong> <a href="https://na-me-21.github.io/nathan.messmer/" target="_blank">Consulter la version en ligne</a></p>
-                <br>
                 <a href="CV MESSMER Nathan.pdf" target="_blank" class="cv-button">Télécharger la version PDF</a>
             </section>
         </main>

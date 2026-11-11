@@ -276,7 +276,7 @@ body {
     flex: 1; /* Prend tout l'espace disponible à gauche */
 }
 
-.timeline-item .date {
+.date {
     display: inline-block;
     font-size: 0.85rem;
     color: #0056b3;
@@ -297,15 +297,39 @@ body {
 }
 
 /* Style des logos d'entreprises */
+.formation-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #3872fa;
+    display: flex;                 /* ⬅️ Aligne le texte et le logo sur la même ligne */
+    justify-content: space-between; /* ⬅️ Pousse le logo tout à droite */
+    align-items: center;        /* ⬅️ Aligne les éléments en haut */
+    gap: 20px;                      /* ⬅️ Espace entre le texte et le logo */
+}
+
+/* Le texte s'empile verticalement dans cette zone */
+.formation-content {
+    display: flex;
+    flex-direction: column;        /* ⬅️ Empile les éléments les uns sous les autres */
+    flex-grow: 1;                  /* ⬅️ Prend toute la place disponible à gauche */
+}
+
 .company-logo {
-    width: 85px; /* Largeur ajustable selon la taille souhaitée */
+    width: 85px;
     height: 85px;
-    object-fit: contain; /* Conserve les proportions sans déformer l'image */
     border-radius: 6px;
     background-color: #ffffff;
     padding: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    flex-shrink: 0; /* Empêche le logo de se déformer sur petit écran */
+    flex-shrink: 0;                 /* ⬅️ Empêche le logo de s'écraser */
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;            /* ⬅️ C'est ici qu'il doit être pour redimensionner l'image */
 }
 
 
@@ -356,8 +380,8 @@ body {
 
 .portfolio-video {
     display: block;
-    width: 60%;          /* ⬅️ Réduisez ce pourcentage (ex: 50% ou 60%) pour qu'elle soit moins large */
-    max-width: 600px;    /* ⬅️ Limite la taille maximale en pixels sur grand écran */
+    width: 70%;          /* ⬅️ Réduisez ce pourcentage (ex: 50% ou 60%) pour qu'elle soit moins large */
+    max-width: 700px;    /* ⬅️ Limite la taille maximale en pixels sur grand écran */
     height: auto;        /* Conserve les proportions d'origine de la vidéo */
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -376,7 +400,7 @@ body {
     display: flex;
     flex-direction: column;  /* Empile l'image et le texte verticalement */
     align-items: center;     /* Centre le texte par rapport à la photo */
-    max-width: 400px;        /* Empêche le bloc de s'élargir excessivement */
+    max-width: 100%;        /* Empêche le bloc de s'élargir excessivement */
 }
 
 /* Style de la légende sous la photo */
